@@ -1,6 +1,6 @@
 # thesimpleworkflow
 
-This is where to start if you want to contribute to our ongoing project, **thelocalworkflow**.
+This is where to start if you want to contribute to our ongoing project, **thelocalworkflow**.  The goal here is to give you a couple of simplified chunks of thelocalworkflow to play with and build on as you learn javascript.  Tutorials on how to get started can be found on Slack.
 
 Here are the steps to get started:
 
