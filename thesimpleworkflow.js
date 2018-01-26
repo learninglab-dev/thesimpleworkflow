@@ -33,18 +33,31 @@ if (args.transcode) {
 
   // do the transcode operation
   // (see function in transcode_sync file that we are requiring above)
-  transcode(sourceFilename, destFilename, crfVal)
+  transcode(sourceFilename, destFilename, crfVal);
 }
 
 if (args.slack) {
+
+  // set defaults for user and message
   var message = "default message";
   var user = "marlon";
+
+  // if user passed in args for message and user,
+  // then change variable values,
+  // otherwise we'll go with defaults
+
   if (args.message) {
     message = args.message
   }
   if (args.user) {
     user = args.user
   }
+
+  // run the slackMe method with user and message
+  // take a look at slack_tools.js
+  // to see what happens to these values once
+  // they are passed in.
+
   slackTools.slackMe(user, message)
 }
 
