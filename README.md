@@ -15,6 +15,7 @@ Here are the steps to get started:
 6. create a file in the root directory of thesimpleworkflow called `.env` and add all your secret stuff (like `SLACK_TOKEN=XXXXXXXXXXXX` and `MONGODB_URL=XXXXXXXXXX` etc.)
 7. most currently existing functions are available by typing `node thesimpleworkflow` + an argument or two.  For example, `node thesimpleworkflow --slackchannels` will list all the Slack channels on the ll-dev slack team (as mk to invite you if you aren't part of it yet).  For more complex commands you need to supply more arguments.   For instance, `node thesimpleworkflow --transcode --input [your file's path] --output [new filepath] --crf [a number like 23, say]` will transcode a file at quality level 23, and it deposit it at [new filepath].
 
+Take a look at the various files and try to get a sense of how the functions they contain get "required" at the top of thesimpleworkflow.js file, before being used in the various blocks of code that follow. Also note the way we use `if` statements to check for various arguments and to assign values to variables before running the functions.  
 
 ## where to go from there
 
