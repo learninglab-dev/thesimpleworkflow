@@ -9,22 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.0",
-    "body-parser": "^1.18.2",
-    "cookie-parser": "^1.4.3",
     "csvtojson": "^1.1.9",
     "dateformat": "^2.0.0",
-    "debug": "^2.6.9",
     "dotenv": "^4.0.0",
     "fluent-ffmpeg": "^2.1.2",
-    "lodash": "^4.17.4",
     "minimist": "^1.2.0",
-    "moment": "^2.18.1",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.4",
-    "serve-favicon": "^2.4.4",
     "slack": "^8.4.1",
-    "traverse": "^0.6.6",
     "xml": "^1.0.1",
     "xml2js": "^0.4.19"
   }
