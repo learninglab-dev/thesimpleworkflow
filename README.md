@@ -15,4 +15,5 @@ Here are the steps to get started:
 
 What should you do next?  Here are some fun (and in many cases seriously useful) challenges to get you started:
 
-1. `ffprobeSync` a video and write that out to a .txt file using `fs.writeFileSync`.  Check out [this link](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) for documentation on that function. 
+1. `ffprobeSync` a video and write that out to a .txt file using `fs.writeFileSync`.  Check out [this link](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) for documentation on that function. If this is too easy, try grabbing some specific bits of data from the `ffprobeSync` output and print out some relevant and elegantly formatted information on the source file.
+2. use `fs.readdirSync` to get an array of files in a folder, then loop through that folder to rename the files.  Grab the metadata from each using `ffprobeSync` while you're at it and write some relevant bits of this data out to a `.txt` file.  Documentation on fs.readdirSync can be found in the [same place as the rest of the fs documentation you saw above](https://nodejs.org/api/fs.html#fs_fs_readdirsync_path_options).
