@@ -19,7 +19,10 @@ Take a look at the various files and try to get a sense of how the functions the
 
 ## where to go from there
 
-What should you do next?  Here are some fun (and in many cases seriously useful) challenges to get you started:
+What should you do next?  Here are some fun (and seriously useful) challenges to get you started:
 
+1. add a new `args` option to `thesimpleworkflow` and connect it to a simple function to `console.log`s a message back.  For bonus points, let the user specify the message by specifying an additional argument.
+1. `ffprobeSync` a video and `console.log` out some of its features--what is its width?  bitrate?  starting timecode?  Try logging these out for the user.  (for bonus points, let the user specify these as arguments when typing the `node thesimpleworkflow --ffprobe`)
 1. `ffprobeSync` a video and write that out to a .txt file using `fs.writeFileSync`.  Check out [this link](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) for documentation on that function. If this is too easy, try grabbing some specific bits of data from the `ffprobeSync` output and print out some relevant and elegantly formatted information on the source file.
 2. use `fs.readdirSync` to get an array of files in a folder, then loop through that folder to rename the files.  Grab the metadata from each using `ffprobeSync` while you're at it and write some relevant bits of this data out to a `.txt` file.  Documentation on fs.readdirSync can be found in the [same place as the rest of the fs documentation you saw above](https://nodejs.org/api/fs.html#fs_fs_readdirsync_path_options).
+3. take a look at how we spawn "child processes" like ffprobe in `tools/ffprobetools.js` and ffmpeg in `tools/transcode_sync.js`.  Now spawn your own `ffmpeg` child process that does something else that ffmpeg does well.  Maybe you can make an [animated gif](http://www.bugcodemaster.com/article/convert-video-animated-gif-using-ffmpeg) from a piece of video; maybe you can [export a still](https://ffmpeg.org/ffmpeg.html#Video-Options).
