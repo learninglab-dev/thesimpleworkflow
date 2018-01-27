@@ -2,6 +2,10 @@ var fs = require("fs");
 var ffmpeg = require('fluent-ffmpeg');
 const cp = require('child_process');
 
+// we're going to define two different functions
+// one is going to use the fluent-ffmpeg module
+// one is going to just use cp.spawnSync
+
 function ffprobe (filePath, array) {
   ffmpeg.ffprobe(filePath, array, function(err, metadata) {
       console.log("in the ffprobe function");
