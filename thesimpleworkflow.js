@@ -1,11 +1,24 @@
+// Here we are requiring all of the external modules
+// we need.  The first three are built in to node,
+// but you still need to require them
 const fs = require('fs');
 const cp = require('child_process');
 const path = require('path');
+
+// these three are from files we have made,
+// and which can be found in the /tools folder
 const transcode = require("./tools/transcode_sync").transcode;
 const slackTools = require("./tools/slack_tools");
 const ffprobeSync = require("./tools/ffprobetools").ffprobeSync;
+
+// and this one needs to be installed using npm
+// if you look in the package.json document,
+// you'll be able to see that it's one of the
+// dependencies listed there.
 const slack = require('slack');
 
+// dotenv is going to read your .env file so that
+// your code
 require('dotenv').config();
 
 var args = require('minimist')(process.argv.slice(2));
@@ -13,6 +26,7 @@ var theDate = new Date;
 var token = process.env.SLACK_TOKEN;
 
 if (args.transcode) {
+
   // for now, just hard code in your file names as defaults
 
   var destFilename = '/Volumes/mk2/_test_materials/sadikshya_trimmed_compressed.mov'
@@ -31,7 +45,8 @@ if (args.transcode) {
     destFilename = args.output
   }
 
-  // do the transcode operation
+  // call the transcode function, passing in
+  // the source, destination and crf
   // (see function in transcode_sync file that we are requiring above)
   transcode(sourceFilename, destFilename, crfVal);
 }
