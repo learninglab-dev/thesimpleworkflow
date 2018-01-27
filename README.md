@@ -2,6 +2,8 @@
 
 This is where to start if you want to contribute to our ongoing project, **thelocalworkflow**.  The goal here is to give you a couple of simplified chunks of the code to play with and build on as you learn javascript.  Tutorials on how to get started can be found on Slack.
 
+## basic setup
+
 Here are the steps to get started:
 
 1. make sure your machine has node and git installed (should be no problem if on one of the LL machines)
@@ -12,6 +14,9 @@ Here are the steps to get started:
 5. type `atom .`
 6. create a file in the root directory of thesimpleworkflow called `.env` and add all your secret stuff (like `SLACK_TOKEN=XXXXXXXXXXXX` and `MONGODB_URL=XXXXXXXXXX` etc.)
 7. most currently existing functions are available by typing `node thesimpleworkflow` + an argument or two.  For example, `node thesimpleworkflow --slackchannels` will list all the Slack channels on the ll-dev slack team (as mk to invite you if you aren't part of it yet).  For more complex commands you need to supply more arguments.   For instance, `node thesimpleworkflow --transcode --input [your file's path] --output [new filepath] --crf [a number like 23, say]` will transcode a file at quality level 23, and it deposit it at [new filepath].
+
+
+## where to go from there
 
 What should you do next?  Here are some fun (and in many cases seriously useful) challenges to get you started:
 
