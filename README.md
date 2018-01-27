@@ -32,4 +32,4 @@ What should you do next?  Here are some fun (and seriously useful) challenges to
 
 ## moving on to the production code
 
-You can keep working on this repository as long as you'd like, but once you feel like you've got the basic gist of how it works, you may want to move over to [thelocalworkflow](https://github.com/ll-dev-team/thelocalworkflow) itself. There is still a load of work to do on that project, and some of the new elements you've created here can probably be deployed there (particularly if you've written an elegant animated gif-maker).
+You can keep working on this repository as long as you'd like, but once you feel like you've got the basic gist of how it works (and certainly if you've made it through step 8), you may want to move over to [thelocalworkflow](https://github.com/ll-dev-team/thelocalworkflow) itself. There is still a load of work to do on that project, and some of the new elements you've created here can probably be deployed there (particularly if you've written an elegant animated gif-maker).
