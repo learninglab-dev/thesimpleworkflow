@@ -15,4 +15,4 @@ Here are the steps to get started:
 
 What should you do next?  Here are some fun (and in many cases seriously useful) challenges to get you started:
 
-1. `ffprobeSync` a video and write that out to a .txt file using `fs.writeFileSync`.  Check out [this link] (https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) for documentation on that function. 
+1. `ffprobeSync` a video and write that out to a .txt file using `fs.writeFileSync`.  Check out [this link](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) for documentation on that function. 
